@@ -25,11 +25,12 @@
 
 * [文本](columns/text.md)
 
+## 筛选
+
+* [文本](filter/text.md)
+
 ## 表单元素
 
 * [文本框](elements/text.md)
 
-## 筛选
-
-* [文本](filter/text.md)
 
