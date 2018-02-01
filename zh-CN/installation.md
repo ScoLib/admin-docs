@@ -45,12 +45,6 @@ $ php artisan vendor:publish --tag=assets
 $ php artisan vendor:publish --tag=views
 ```
 
-- 语言包。 `/resources/lang/vendor/admin`
-
-```sh
-$ php artisan vendor:publish --tag=lang
-```
-
 ###### 2. 路由
 
 `routes/web.php` 追加 `Admin::routes();`
