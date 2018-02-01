@@ -5,7 +5,6 @@
 * [介绍](README.md)
 * [更新日志](changelog.md)
 * [常见问题](faq.md)
-* [文本](wen-ben.md)
 
 ## 入门
 
@@ -29,4 +28,8 @@
 ## 表单元素
 
 * [文本框](elements/text.md)
+
+## 筛选
+
+* [文本](filter/text.md)
 
