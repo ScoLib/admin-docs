@@ -1,53 +1,63 @@
 # 导航
 
-## Title
+## 配置
 
-## Icon 
+### 标题
 
-## PageId
+```php
+    /**
+     * The component display name
+     *
+     * @var string
+     */
+    protected $title;
+```
 
-## ParentPageId
 
-## Priorty
+### 图标
+
+```php
+    /**
+     * The page icon class name.
+     *
+     * @var string|null
+     */
+    protected $icon;
+```
+图标的class名，如：`fa-user`
 
 
+### 页面ID
 
+```php
+    /**
+     * The page id name.
+     *
+     * @var string|null
+     */
+    protected $pageId;
+```
 
-string|null getPageId()
-Get the page id
+### 页面从属的父级页面ID
 
-$this setPageId(string $pageId)
-Set the page id
+```php
+    /**
+     * The page belong to page id name.
+     *
+     * @var string
+     */
+    protected $parentPageId;
+```
+> 父级页面一般只是一个分组，无实际访问页面
 
-string|null getIcon()
-Get the page icon class name.
+### 权重
 
-$this setIcon(string $icon)
-Set the page icon class name.
-
-string getParentPageId()
-No description
-
-$this setParentPageId(string $parentPageId)
-No description
-
-hasParentPageId()
-No description
-
-int getPriority()
-No description
-
-$this setPriority(int $priority)
-No description
-
-getNavigation()
-{@inheritdoc}
-
-addToNavigation($badge = null)
-{@inheritdoc}
-
-Page makePage(string|Closure|null $badge = null)
-Make page
-
-string getDisplayUrl(array $parameters = [])
-Get the model display url.
+```php
+    /**
+     * The page priority.
+     *
+     * @var int
+     */
+    protected $priority = 100;
+```
+值越小排名越靠前

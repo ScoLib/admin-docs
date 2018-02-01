@@ -78,43 +78,4 @@ class PostObserver
 
 
 
-bool isDisplay()
-Determine if the entity have access to display.
-
-bool isCreate()
-Check if the entity have access to create.
-
-bool isEdit()
-Check if the entity have access to edit.
-
-mixed isDelete()
-Check if the entity have access to delete.
-
-bool isDestroy()
-Check if the entity have access to destroy.
-
-bool isRestore()
-Check if the entity have access to restore.
-
-mixed isRestorableModel()
-Whether the model can be restored
-
-observe($class)
-Register an observer with the Component.
-
-array getObservableAbilities()
-Get the observable ability names.
-
-registerAbility(string $ability, string|Closure $callback)
-register ability to access.
-
-Closure makeAbilityCallback(string|Closure $callback)
-No description
-
-bool can(string $ability)
-Determine if the entity has a given ability.
-
-Collection getAccesses()
-Get all ability.
-
 
