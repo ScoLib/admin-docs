@@ -19,6 +19,7 @@ before_script:
   - npm install -g gitbook-cli
 
 script:
+  - gitbook install
   - rm -rf _book
   - gitbook build
   - cp assets/CNAME _book/CNAME
