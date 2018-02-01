@@ -5,7 +5,7 @@
 * [介绍](README.md)
 * [更新日志](changelog.md)
 * [常见问题](faq.md)
-* 文本
+* [文本](wen-ben.md)
 
 ## 入门
 
