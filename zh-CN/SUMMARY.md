@@ -50,8 +50,9 @@
 
 * [文本框](elements/text.md)
 * [数字](elements/number.md)
-* [Email](elements/text.md)
+* [Email](elements/email.md)
 * [隐藏域](elements/hidden.md)
+* [密码框](elements/password.md)
 * [文本域](elements/textarea.md)
 * [单选框](elements/radio.md)
 * [开关](elements/el-switch.md)
@@ -70,4 +71,5 @@
 * [TinyMCE编辑器](elements/tinymce.md)
 * [Markdown编辑器](elements/markdown.md)
 * [树形](elements/tree.md)
+
 
