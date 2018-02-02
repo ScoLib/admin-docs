@@ -40,11 +40,11 @@
 ## 筛选
 
 * [文本框](filter/text.md)
-* [下拉单选框](filter/select.md)
-* [单选框](filter/radio.md)
-* [多选框](filter/checkbox.md)
-* [日期范围框](filter/date-range.md)
-* [日期时间范围框](filter/datetime-range.md)
+* [下拉单选](filter/select.md)
+* [单选](filter/radio.md)
+* [多选](filter/checkbox.md)
+* [日期范围选择](filter/date-range.md)
+* [日期时间范围选择](filter/datetime-range.md)
 
 ## 表单元素
 
@@ -71,5 +71,4 @@
 * [TinyMCE编辑器](elements/tinymce.md)
 * [Markdown编辑器](elements/markdown.md)
 * [树形](elements/tree.md)
-
 
