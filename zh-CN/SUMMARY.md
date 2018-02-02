@@ -18,8 +18,7 @@
 * [权限](access.md)
 * [导航](navigation.md)
 * [数据显示](display.md)
-* [新增数据](create.md)
-* [编辑数据](edit.md)
+* [表单](form.md)
 
 ## 数据显示
 
