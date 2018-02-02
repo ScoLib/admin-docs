@@ -18,8 +18,8 @@
 * [权限](access.md)
 * [导航](navigation.md)
 * [数据显示](display.md)
-* [创建](create.md)
-* [编辑](edit.md)
+* [新增数据](create.md)
+* [编辑数据](edit.md)
 
 ## 数据显示
 
