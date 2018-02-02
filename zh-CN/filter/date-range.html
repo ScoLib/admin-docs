@@ -1,0 +1,913 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>日期范围选择 · Sco Admin 文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="klgd">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="datetime-range.html" />
+    
+    
+    <link rel="prev" href="checkbox.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"ScoLib","repo":"admin","type":"star","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.scophp.com" target="_blank" class="custom-link">Sco Admin</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        <li class="header">前言</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../changelog.html">
+            
+                <a href="../changelog.html">
+            
+                    
+                    更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../faq.html">
+            
+                <a href="../faq.html">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">入门</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../installation.html">
+            
+                <a href="../installation.html">
+            
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../quick-start.html">
+            
+                <a href="../quick-start.html">
+            
+                    
+                    快速开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../configuration.html">
+            
+                <a href="../configuration.html">
+            
+                    
+                    配置信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">组件</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../component.html">
+            
+                <a href="../component.html">
+            
+                    
+                    基本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../access.html">
+            
+                <a href="../access.html">
+            
+                    
+                    权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../navigation.html">
+            
+                <a href="../navigation.html">
+            
+                    
+                    导航
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../display.html">
+            
+                <a href="../display.html">
+            
+                    
+                    数据显示
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../form.html">
+            
+                <a href="../form.html">
+            
+                    
+                    表单
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">表格列</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../columns/text.html">
+            
+                <a href="../columns/text.html">
+            
+                    
+                    文本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../columns/link.html">
+            
+                <a href="../columns/link.html">
+            
+                    
+                    链接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../columns/image.html">
+            
+                <a href="../columns/image.html">
+            
+                    
+                    图片
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../columns/datetime.html">
+            
+                <a href="../columns/datetime.html">
+            
+                    
+                    时间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../columns/tags.html">
+            
+                <a href="../columns/tags.html">
+            
+                    
+                    标签
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../columns/mapping.html">
+            
+                <a href="../columns/mapping.html">
+            
+                    
+                    映射
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="../columns/html.html">
+            
+                <a href="../columns/html.html">
+            
+                    
+                    HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="../columns/custom.html">
+            
+                <a href="../columns/custom.html">
+            
+                    
+                    自定义列
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">筛选</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="text.html">
+            
+                <a href="text.html">
+            
+                    
+                    文本框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="select.html">
+            
+                <a href="select.html">
+            
+                    
+                    下拉单选
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="radio.html">
+            
+                <a href="radio.html">
+            
+                    
+                    单选
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="checkbox.html">
+            
+                <a href="checkbox.html">
+            
+                    
+                    多选
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="5.5" data-path="date-range.html">
+            
+                <a href="date-range.html">
+            
+                    
+                    日期范围选择
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="datetime-range.html">
+            
+                <a href="datetime-range.html">
+            
+                    
+                    日期时间范围选择
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">表单元素</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../elements/text.html">
+            
+                <a href="../elements/text.html">
+            
+                    
+                    文本框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../elements/number.html">
+            
+                <a href="../elements/number.html">
+            
+                    
+                    数字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../elements/email.html">
+            
+                <a href="../elements/email.html">
+            
+                    
+                    Email
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../elements/hidden.html">
+            
+                <a href="../elements/hidden.html">
+            
+                    
+                    隐藏域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../elements/password.html">
+            
+                <a href="../elements/password.html">
+            
+                    
+                    密码框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../elements/textarea.html">
+            
+                <a href="../elements/textarea.html">
+            
+                    
+                    文本域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="../elements/radio.html">
+            
+                <a href="../elements/radio.html">
+            
+                    
+                    单选框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" data-path="../elements/el-switch.html">
+            
+                <a href="../elements/el-switch.html">
+            
+                    
+                    开关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.9" data-path="../elements/checkbox.html">
+            
+                <a href="../elements/checkbox.html">
+            
+                    
+                    多选框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.10" data-path="../elements/select.html">
+            
+                <a href="../elements/select.html">
+            
+                    
+                    下拉单选框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.11" data-path="../elements/multi-select.html">
+            
+                <a href="../elements/multi-select.html">
+            
+                    
+                    下拉多选框
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.12" data-path="../elements/date.html">
+            
+                <a href="../elements/date.html">
+            
+                    
+                    日期选择
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.13" data-path="../elements/time.html">
+            
+                <a href="../elements/time.html">
+            
+                    
+                    时间选择
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.14" data-path="../elements/datetime.html">
+            
+                <a href="../elements/datetime.html">
+            
+                    
+                    日期时间选择
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.15" data-path="../elements/timestamp.html">
+            
+                <a href="../elements/timestamp.html">
+            
+                    
+                    时间戳
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.16" data-path="../elements/date-range.html">
+            
+                <a href="../elements/date-range.html">
+            
+                    
+                    日期范围选择
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.17" data-path="../elements/datetime-range.html">
+            
+                <a href="../elements/datetime-range.html">
+            
+                    
+                    日期时间范围选择
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.18" data-path="../elements/file.html">
+            
+                <a href="../elements/file.html">
+            
+                    
+                    上传文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.19" data-path="../elements/image.html">
+            
+                <a href="../elements/image.html">
+            
+                    
+                    上传图片（单）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.20" data-path="../elements/images.html">
+            
+                <a href="../elements/images.html">
+            
+                    
+                    上传图片（多）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.21" data-path="../elements/tinymce.html">
+            
+                <a href="../elements/tinymce.html">
+            
+                    
+                    TinyMCE编辑器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.22" data-path="../elements/markdown.html">
+            
+                <a href="../elements/markdown.html">
+            
+                    
+                    Markdown编辑器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.23" data-path="../elements/tree.html">
+            
+                <a href="../elements/tree.html">
+            
+                    
+                    树形
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >日期范围选择</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#&#x65E5;&#x671F;&#x8303;&#x56F4;&#x9009;&#x62E9;"><b></b>&#x65E5;&#x671F;&#x8303;&#x56F4;&#x9009;&#x62E9;</a></li></ul></div><a href="#&#x65E5;&#x671F;&#x8303;&#x56F4;&#x9009;&#x62E9;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x65E5;&#x671F;&#x8303;&#x56F4;&#x9009;&#x62E9;"><a name="&#x65E5;&#x671F;&#x8303;&#x56F4;&#x9009;&#x62E9;" class="anchor-navigation-ex-anchor" href="#&#x65E5;&#x671F;&#x8303;&#x56F4;&#x9009;&#x62E9;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x65E5;&#x671F;&#x8303;&#x56F4;&#x9009;&#x62E9;</h1>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; <a href="http://www.scophp.com" target="_blank">scophp.com</a> 2016-2017 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2018-02-02 09:24:07
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="checkbox.html" class="navigation navigation-prev " aria-label="Previous page: 多选">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="datetime-range.html" class="navigation navigation-next " aria-label="Next page: 日期时间范围选择">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"日期范围选择","level":"5.5","depth":1,"next":{"title":"日期时间范围选择","level":"5.6","depth":1,"path":"filter/datetime-range.md","ref":"filter/datetime-range.md","articles":[]},"previous":{"title":"多选","level":"5.4","depth":1,"path":"filter/checkbox.md","ref":"filter/checkbox.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","-highlight","-livereload","-disqus","search-plus","github","github-buttons","edit-link","expandable-chapters","tbfed-pagefooter","anchor-navigation-ex"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy <a href=\"http://www.scophp.com\" target=\"_blank\">scophp.com</a> 2016-2017","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"shortName":"scophpdocs"},"github":{"url":"https://github.com/ScoLib/admin"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"showLevel":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right","printLog":false,"multipleH1":false,"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false}},"github-buttons":{"buttons":[{"user":"ScoLib","repo":"admin","type":"star","size":"small","count":true}]},"edit-link":{"label":"Edit This Page","base":"https://github.com/scolib/admin/edit/master/docs"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"klgd","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Sco Admin 文档","language":"zh-hans","output.name":"site","links":{"sidebar":{"Sco Admin":"http://www.scophp.com"}},"gitbook":"*","description":"Sco Admin 是一个基于 Laravel 5.5"},"file":{"path":"filter/date-range.md","mtime":"2018-02-02T09:24:07.636Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-02T09:25:55.301Z"},"basePath":"..","book":{"language":"zh-CN"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

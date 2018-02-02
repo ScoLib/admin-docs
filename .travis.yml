@@ -1,0 +1,38 @@
+language: node_js
+
+node_js:
+  - 6
+
+branches:
+  only:
+    - master
+
+# This triggers builds to run on the new TravisCI infrastructure.
+# See: http://docs.travis-ci.com/user/workers/container-based-infrastructure/
+sudo: false
+
+notifications:
+  email: false
+
+
+before_script:
+  - npm install -g gitbook-cli
+
+script:
+  - gitbook install
+  - rm -rf _book
+  - gitbook build
+  - cp assets/CNAME _book/CNAME
+
+after_script:
+  - cd _book
+  - git init
+  - git config user.name "klgd"
+  - git config user.email "slice1213@gmail.com"
+  - git add -A
+  - git commit -m "Update docs"
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:gh-pages
+
+env:
+ global:
+   - GH_REF: github.com/ScoLib/admin-docs.git
