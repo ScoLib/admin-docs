@@ -20,11 +20,6 @@
 * [数据显示](display.md)
 * [表单](form.md)
 
-## 数据显示
-
-* [表格](display/table.md)
-* [图片集](display/image.md)
-
 ## 表格列
 
 * [文本](columns/text.md)
